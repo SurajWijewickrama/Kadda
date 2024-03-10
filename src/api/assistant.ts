@@ -1,5 +1,5 @@
 const askAssistant = async (prompt: string) => {
-  const res = await fetch("http://127.0.0.1:8000/assistant", {
+  const res = await fetch(`${process.env.BACKEND_URL}/assistant`, {
     method: "POST",
     headers: {
       Accept: "application/json",
